@@ -218,7 +218,38 @@ h1 {
 .modal-title {
   margin-bottom: 0.5em;
 }
-
+.keyboard-view {
+  margin-top: 3px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 100%;
+}
+.alphabet {
+  padding: 10px;
+  background-color: #d3d6da;
+  margin: 2px;
+  width: 2em;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 4px;
+  color: inherit;
+}
+.alphabet.correct {
+  background: var(--color-success);
+  border-color: var(--color-success);
+  color: white;
+}
+.alphabet.incorrect {
+  background: var(--color-gray-300);
+  border-color: var(--color-gray-300);
+  color: white;
+}
+.alphabet.misplaced {
+  background: var(--color-warning);
+  border-color: var(--color-warning);
+  color: white;
+}
 /*
   Keyframe animations
 */
